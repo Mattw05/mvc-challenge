@@ -1,24 +1,24 @@
 const newFormHandler = async (event) => {
     event.preventDefault();
   
-    const description = document.querySelector("#commentText").value.trim();
-  
-    if (description) {
-      const response = await fetch(`/api/comment`, {
+    const commentText = document.querySelector("#commentText").value.trim();
+   const blog_id = event.target.getAttribute("data-post-id")
+   console.log(commentText,blog_id)
+    if (commentText && blog_id) {
+      const response = await fetch(`/api/comments`, {
         method: 'POST',
-        body: JSON.stringify({ description }),
+        body: JSON.stringify({ commentText ,blog_id}),
         headers: {
           'Content-Type': 'application/json',
         },
       });
-      console.log(description)
-
-  
+      
+      
       if (response.ok) {
-        document.location.replace('');
+        document.location.reload()
       } else {
-        alert('Failed to create blog');
-        console.log(description)
+        alert('Failed to create comment');
+        console.log(commentText)
       }
     }
   };
