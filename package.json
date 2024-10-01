@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "seed": "node seeds/seed.js",
-    "develop": "nodemon server.js"
+    "develop": "nodemon server.js",
+    "build": "babel src --out-dir dist"
   },
   "keywords": [],
   "author": "",
@@ -24,6 +25,9 @@
     "sequelize": "^6.3.5"
   },
   "devDependencies": {
+    "@babel/cli": "^7.25.6",
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.4",
     "eslint": "^7.12.1",
     "eslint-config-prettier": "^6.15.0",
     "prettier": "^2.1.2"

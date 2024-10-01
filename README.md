@@ -1,7 +1,7 @@
 # MVC-challenge 
   ![Github license](https://img.shields.io/badge/license-undefined-blue.svg)
   ## Description
-  a blog tech creator where you can sign up and sign in using email and password to log in, then your able to create your own blog and userrs can post comments as well.
+  a blog tech creator where you can sign up and sign in using email and password to log in, then your able to create your own blog, and users can post comments as well.
   ## Features
   handlebars, models, seeds and database functionality
   ## Installation
