@@ -10,5 +10,6 @@
   in the terminal npm i, then psql -U postgres, type password admin, after that type in CREATE DATABASE techblog_db; ,then open  integrated terminal in schema.sql file and type npm run seed, then npm start.go to the browser and put in localhost 3001
   ## Contributors
   Matt Weigandt
-  ## Testing
+  ## URL for deployed application
+  https://mvc-challenge-o2o6.onrender.com
    
